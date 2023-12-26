@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Raleway:wght@200;400;500;700&family=Roboto:wght@300;400;700&display=swap');
+
+//Fuente
+$fuentePrincipal:"Roboto";
+
+//Colores
+$primario: #e8505b ;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+//others
+$fSizeNav:1.2rem;
+$fWeigNav:700;
+
+//--------------------------------------------------
+
+h2{
+    font-size: 2.4rem;
+}
+
+body{
+    font-family:$fuentePrincipal;
+    font-size: 1.6rem;
+}
+
+.container__nav__item{
+    color: $negro;
+    font-size: $fSizeNav;
+    font-weight: $fWeigNav;
+    &--register{
+        color: $blanco;
+        background-color: $primario;
+        font-weight: $fWeigNav;
+        font-size: $fSizeNav;
+        text-align: center;
+    }
+}
+
+
+.container__form__grid__content{
+    background-color: $primario;
+    
+    &--heading{
+        color:$blanco;
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.container__search{
+    &__text{
+        color:$blanco;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    &__button{
+        background-color: $secundario;
+        color: $blanco;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+//SECTION steps
+
+.steps{
+    &__content{
+        background-color: $primario;
+    }
+    &__heading{
+        font-size: 2.5rem;
+        text-align: center;
+        color: $blanco;
+
+        &__description{
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+}
+
+//SECTION comments
+
+.comments{
+    &__heading{
+        font: 2rem;
+        color: $negro;
+        text-align: center;
+    }
+
+    &__grid{
+
+        &__items{
+            background-color: $secundario;
+            color: $blanco;
+        }
+
+        .comments{
+            &__header{
+                color: $blanco;
+            }
+
+            &__name{
+                font-weight: 700;
+                margin-bottom: 5px;
+            }  
+            
+            &__text{
+                line-height: 1.9rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+//SECTION favorites
+
+.favorites{
+    background-color: $grisClaro;
+
+    &__heading{
+        color: $secundario;
+        text-align: center;
+    }
+
+    &__grid{
+        &__item{
+            background-color: $blanco;
+
+            &__content{
+                .favorites__name{
+                color: $primario;
+                }
+                .favorites__text{
+                    font-size: 1rem;
+                    color: $secundario;
+                    line-height: 1.7rem;
+                }
+            } 
+        }
+    }
+}
+
+//Section Delivery
+
+.container__delivery{
+    &__heading{
+        color: $secundario;
+        text-align: center;
+    }
+
+    &__content{
+        font-size: 1.5rem;
+        color: $secundario;
+    }
+
+    &__button{
+        color: $blanco;
+        background-color: $primario;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__button:hover {
+        background-color: #455a64;
+    }
+}
+
+//FOOTER
+footer{
+    background-color: $secundario;
+    .footer__part{
+        color: $blanco;
+
+    .footer__text{
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    .footer__nav{
+        font-size: 1.2rem;
+        line-height: 1.7;
+
+        &__link{
+            color:$blanco;
+        }
+
+        &__link:hover{       //hover link navbar footer
+            color:$primario;
+        }
+    }
+
+    }
+}
+
+//COPYRIGHT 
+.footer__copyright{
+    color: $blanco;
+    background-color: $primario;
+    text-align: center;
+}
